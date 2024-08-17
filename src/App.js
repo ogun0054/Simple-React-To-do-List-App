@@ -1,20 +1,18 @@
 // Import styled-components into our app
 import styled from "styled-components";
+import Header from "./components/Header.js";
+import Task from "./components/Task.js";
 
 // Using styled-components to style an h1
-const Header = styled.h1`
-  font-size: 32px;
-`;
+// const Header = styled.h1`
+//   font-size: 32px;
+// `;
 
 const tasks = [
   { name: "Swab the deck", id: 1 },
   { name: "Find treasure", id: 2 },
   { name: "Set sail", id: 3 },
 ];
-
-function Task({ name, onClick }) {
-  return <div onClick={onClick}> {name} </div>;
-}
 
 export default function App() {
   return (
